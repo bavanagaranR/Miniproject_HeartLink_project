@@ -63,10 +63,10 @@ const Sidebar = () => {
 	return (
 		<div className='md:flex-[2_2_0] w-18 max-w-52' style={{boxSizing:"border-box"}}>
 			<div className='sticky top-0 left-0 h-screen flex flex-col border-r border-gray-700 w-20 md:w-full'>
-				 <Link to='/' className='flex justify-center align-middle md:justify-start' style={{justifyContent:"center", alignItems:"center",boxSizing:"border-box"}}>
+				 <Link to='/' className='flex justify-center align-middle md:justify-start' style={{justifyContent:"center", alignItems:"center",boxSizing:"border-box",marginTop:"0.8rem"}}>
 					{/* <XSvg className='px-2 w-12 h-12 rounded-full fill-white hover:bg-stone-900' /> */}
-					<img src={logo} alt="" className='px-2 w-12 h-12 rounded-full fill-white hover:bg-stone-900' />
-					{!isMobile &&<h1 id="name" className="font-extrabold" style={{fontSize:"2rem",paddingRight:"4px"}}>HeartLink</h1>}
+					<img src={logo} alt="" className='m-2   fill-white hover:bg-stone-900' style={{borderRadius:"10px",maxWidth:"2.7rem"}}/>
+					{!isMobile &&<h1 id="name" className="font-extrabold" style={{fontSize:"1.5rem",color:"#F599A2"}}>HeartLink</h1>}
 				</Link> 
 				
 				<ul className='flex flex-col gap-3 mt-4'>
