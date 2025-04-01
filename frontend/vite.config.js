@@ -1,9 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-
+import tailWindcss from '@tailwindcss/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [tailWindcss(),react()],
   server: {
     port: parseInt(process.env.PORT) || 3000,
     proxy: {
