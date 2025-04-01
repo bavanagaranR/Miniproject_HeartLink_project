@@ -6,7 +6,9 @@
 	"scripts": {
 		"dev": "cross-env NODE_ENV=production node backend/server.js",
 		"start": "node backend/server.js",
-		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+		"build": "npm install && npm install --prefix frontend && npm run tailwind:build --prefix frontend && npm run build --prefix frontend",
+		 "tailwind:build": "npx tailwindcss -i ./frontend/src/index.css -o ./frontend/dist/output.css --minify"
+
 	},
 	"keywords": [],
 	"author": "",
