@@ -1,7 +1,12 @@
 import daisyui from "daisyui";
 
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/daisyui/dist/**/*.js", // Ensure DaisyUI classes are not purged
+    "./node_modules/@tailwindcss/forms/**/*.js" // If using forms plugin
+  ],
   theme: {
     extend: {},
   },
